@@ -1,6 +1,13 @@
-body{background-color: #f0d28c;}
+body{animation: changeBgColor 30s infinite;} 
+@keyframes changeBgColor{0% {background-color:white;} 50%{background-color: pink;}}
 p{color:red;}
 .collage{style="top: 1000px; left: 1000px;"}
 .crop{position: relative; overflow: hidden;}
-.container{position: relative;}
+.container {display: flex; justify-content: center; align-items: center;}
+.flex-container{display:flex;flex-direction:row;width: 100%;}.felx-item{margin: 5%;padding: 10%;}
+.flex-container div{flex:1;}
 .center{position: absolute; left: 50%; transform: translate(-50%,0);}
+.display-exp{display: flex;}
+div {display: flex;   font-family: "Dancing Script", cursive; padding: padding-top: 50px; padding-right: 30px; padding-bottom: 50px; padding-left: 80px; flex-direction: column}
+#main div {flex: 1;}
+.hoverElement:hover{color:blue;}
