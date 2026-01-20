@@ -1,0 +1,6 @@
+body{background-color: #f0d28c;}
+p{color:red;}
+.collage{style="top: 1000px; left: 1000px;"}
+.crop{position: relative; overflow: hidden;}
+.container{position: relative;}
+.center{position: absolute; left: 50%; transform: translate(-50%,0);}
