@@ -1,3 +1,26 @@
+body{background-color: darkblue;}
 
-body{background-color: black;}
+header{color: aliceblue;font-family: "Playwrite GB J Guides", cursive;}
+footer{color: aliceblue;font-family: "Playwrite GB J Guides", cursive;}
+ul{color: aliceblue;}
+h1{color: aliceblue;}
+h2{color: aliceblue;font-family: "Playwrite GB J Guides", cursive;}
+h3{color: aliceblue;}
+h6{color: aliceblue;}
 p{color: aliceblue;}
+div {display:flex 10px aliceblue;padding: 10px 10px 10px 10px;background-color: rgb(72, 81, 181);
+    margin: 50px 5px 10px 10px;}
+.spin{animation: spinny 1s infinite;}
+@keyframes spinny {0% {rotate: 0deg;} 100% {rotate: 360deg;}}
+
+
+.container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(72, 81, 181);
+  padding: 10px;}
+.crop{position: relative; overflow: hidden;}
+.center{position: absolute; left: 50%; transform: translate(-50%,0);}
+.hoverElement:hover{color:rgb(255, 0, 0);}
+.flex-container{display:flex;flex-direction:row;width: 100%;}
+.felx-item{margin: 5%;padding: 5%;background-color: rgb(72, 81, 181)}

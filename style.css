@@ -1,6 +1,18 @@
 body{animation: changeBgColor 30s infinite;} 
 @keyframes changeBgColor{0% {background-color:white;} 50%{background-color: pink;}}
-p{color:red;}
+p{ animation: moveText 30s infinite; 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: moveText;
+  animation-duration: 4s;
+  animation-delay: 2s;}
+@keyframes moveText 
+{0% {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}}
 .collage{style="top: 1000px; left: 1000px;"}
 .crop{position: relative; overflow: hidden;}
 .container {display: flex; justify-content: center; align-items: center;}
@@ -10,4 +22,3 @@ p{color:red;}
 .display-exp{display: flex;}
 div {display: flex;   font-family: "Dancing Script", cursive; padding: padding-top: 50px; padding-right: 30px; padding-bottom: 50px; padding-left: 80px; flex-direction: column}
 #main div {flex: 1;}
-.hoverElement:hover{color:blue;}
