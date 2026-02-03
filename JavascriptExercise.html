@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
-<body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<body>
+<h1>Do not touch anything!</h1>
+
+<button onmouseover="myFunction()">A note</button>
+<button onclick="this.style.color='red'"> Do not single click me, I will turn red</button>
+<button ondblclick="this.style.color='red'">Do not double click me, I will turn red.</button>
+<p id="nono" onclick="myFunction2()">DO NOT CLICK ME!</p>
+
+<img src=".\Images\torugrass.gif" alt="Cat with grass">
+
+<script>
+function myFunction() 
+{alert("I'm serious do not touch anything!");}
+</script>
+<script>
+function myFunction2() {
+  document.getElementById("nono").textContent = "WHAT HAVE YOU DONE?!";
+}
+</script>
 
 </body>
 </html>
